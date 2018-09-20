@@ -8,6 +8,20 @@ class App extends Component {
     super(); 
     this.state = {};
   }
+
+  render() {
+    return ( 
+      <Board />
+    )
+  }
+}
+
+class Board extends Component { 
+  render () { 
+    return ( 
+      <div> Hello </div>
+    )
+  }
 }
 
 render(<App />, document.getElementById('content'));
