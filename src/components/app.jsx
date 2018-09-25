@@ -9,7 +9,7 @@ class App extends Component {
     this.state = {};
   }
 
-  render() {
+  render () {
     return ( 
       <Board />
     )
@@ -23,3 +23,5 @@ class Board extends Component {
     )
   }
 }
+
+export default App;
