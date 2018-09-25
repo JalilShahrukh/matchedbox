@@ -1,21 +1,23 @@
-const path = require('path')
+const path = require('path'); 
 
-module.exports = {
+module.exports = { 
   entry: './src/index.js',
-  output: {
+  output: { 
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js',
-  },
-  module: {
-    loaders: [
-      {
-        test: /jsx?/,
+    filename: 'bundle.js'
+  }, 
+  module: { 
+    rules: [
+      { 
+        test: /\.jsx$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'react']
-        }
-      },
+      }, 
+      { 
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      }, 
       {
         test: /scss$/,
         exclude: /node_modules/,
