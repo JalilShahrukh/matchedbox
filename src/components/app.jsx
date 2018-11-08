@@ -11,15 +11,23 @@ class App extends Component {
 
   render () {
     return ( 
-      <Board />
+      <div> App </div>
     )
   }
 }
 
-class Board extends Component { 
+class Row extends Component { 
   render () { 
     return ( 
-      <div> Hello </div>
+      <div> Row </div>
+    )
+  }
+}
+
+class Box extends Component { 
+  render () { 
+    return ( 
+      <div> Box </div>
     )
   }
 }
